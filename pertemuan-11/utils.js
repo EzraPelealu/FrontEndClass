@@ -12,5 +12,5 @@ let hello = () => {
     console.log("Hello Module");
 };
 
-export { fullName, numbers, john };
-export default hello
+export { fullName, numbers as angka, john };
+export default hello;

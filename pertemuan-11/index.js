@@ -43,7 +43,7 @@
 
 //2.B Promise
 //Buat Promise
-let condition = true
+let condition = false;
 const newPromise = new Promise((resolve, reject) =>{
     if (condition){
         resolve("Berhasil");
@@ -53,15 +53,20 @@ const newPromise = new Promise((resolve, reject) =>{
 });
 
 //Pakai Promise
-//1. then - catch
-
-newPromise.then((result) => {
-    console.log(result);
-});
-.catch((error) => console.log(error));
+//1. then - catch (ES6)
+newPromise
+    .then((result) => {
+        console.log(result);
+    })
+    .catch((error) => console.log(error));
 
 //2. async - await (ES7)
-const consumePromise = async ()=> {
-    let result = await newPromise
-    console.log(result)
-}
+const consumePromise = async () => {
+    try {
+      let result = await newPromise;
+      console.log(result);
+    } catch (error) {
+      console.log(error);
+    }
+};
+consumePromise();

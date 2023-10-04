@@ -1,3 +1,4 @@
-console.log("Hello World!")
-console.log("Indonesia")
+console.log("Hello World");
+console.log("Good morning!!!");
+console.log("Hello !!!");
 

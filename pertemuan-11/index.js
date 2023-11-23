@@ -69,4 +69,8 @@ const consumePromise = async () => {
       console.log(error);
     }
 };
+<<<<<<< HEAD
 consumePromise();
+=======
+consumePromise();
+>>>>>>> 9a2f91f1e53fed270065b76a994887dbcc764574

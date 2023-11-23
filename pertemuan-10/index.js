@@ -80,4 +80,8 @@ let orang = {
 };
 
 let { nama, umur: age, sudahMenikah } = orang;
+<<<<<<< HEAD
 console.log(nama, age, sudahMenikah);
+=======
+console.log(nama, age, sudahMenikah);
+>>>>>>> 9a2f91f1e53fed270065b76a994887dbcc764574
